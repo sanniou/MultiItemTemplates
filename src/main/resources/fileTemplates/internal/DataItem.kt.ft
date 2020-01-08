@@ -1,0 +1,6 @@
+package MULTI_ITEM_PACKAGE
+import com.sanniou.multiitem.DataItem
+
+class ${NAME}() : DataItem {
+    override fun getItemType() = R.layout.MULTI_ITEM_LAYOUT
+}

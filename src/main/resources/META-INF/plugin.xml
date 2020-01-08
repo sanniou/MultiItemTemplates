@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.sannniou.multiitem.plugin.templates</id>
+    <name>MultiItemTemplates</name>
+    <vendor email="findjichang@gmail.com" url="https://github.com/sanniou/MultiItemKit">sannniou</vendor>
+
+    <description><![CDATA[
+     An intellij idea plugin to generate DataItem Templates
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <internalFileTemplate name="Item"/>
+        <internalFileTemplate name="ItemViewProvider"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Creator"
+                class="GenerateAction"
+                text="MultiItem"
+                description="Create an Item class and ItemViewProvider."
+                icon="/fileTypes/javaClass.png">
+            description="Generate dataItem template">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
