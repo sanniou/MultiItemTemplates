@@ -4,7 +4,9 @@
     <vendor email="findjichang@gmail.com" url="https://github.com/sanniou/MultiItemKit">sannniou</vendor>
 
     <description><![CDATA[
-     An intellij idea plugin to generate DataItem Templates
+     An intellij idea plugin to generate DataItem Templates.<br/><br/>
+     P.S. MultiItem: An Android library binding View by DataItem
+      <a href="https://github.com/sanniou/MultiItemKit">https://github.com/sanniou/MultiItemKit</a>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

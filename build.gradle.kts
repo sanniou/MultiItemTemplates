@@ -7,8 +7,8 @@ plugins {
 /*sourceSets {
     getByName("main").resources.srcDirs("src/main/resources")
 }*/
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "com.sanniou.plugin"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -22,7 +22,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2019.3.1"
+    version = "2019.3.1"vendor
 }
 configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -35,10 +35,11 @@ tasks {
         kotlinOptions.jvmTarget = "1.8"
     }
 }
+
 tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
     changeNotes(
         """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      Supported  MultiItem 1.0.0.<br>
+      <a href="https://github.com/sanniou/MultiItemKit">https://github.com/sanniou/MultiItemKit</a>"""
     )
 }
