@@ -36,7 +36,7 @@ class GenerateAction : AnAction() {
             getPackage(file.parent)
 
         if (packageName == null) {
-            notificationError("无法在此处创建文件：${file?.name}")
+            notificationError("getPackage failed ： ${file.name}")
             return
         }
 
